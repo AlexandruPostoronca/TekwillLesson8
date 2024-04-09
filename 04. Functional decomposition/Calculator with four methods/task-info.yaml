@@ -1,0 +1,208 @@
+type: edu
+custom_name: Calculator with four methods
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+      
+          public static void main(String[] args) {
+      
+              java.util.Scanner scanner = new java.util.Scanner(System.in);
+              long num1 = scanner.nextLong();
+              String operator = scanner.next();
+              long num2 = scanner.nextLong();
+      
+              switch (operator) {
+                  case "^" -> SimpleCalculator.power(num1, num2);
+                  case "+" -> SimpleCalculator.sumTwoNumbers(num1, num2);
+                  case "-" -> SimpleCalculator.subtractTwoNumbers(num1, num2);
+                  case "/" -> SimpleCalculator.divideTwoNumbers(num1, num2);
+                  case "*" -> SimpleCalculator.multiplyTwoNumbers(num1, num2);
+                  default -> {
+                  }
+              }
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void testPowerPositiveBasePositiveExponent() {
+              simpleTest("16", "2 ^ 4");
+          }
+      
+          @Test
+          public void testPowerNegativeBasePositiveExponent() {
+              simpleTest("81", "-3 ^ 4");
+          }
+      
+          @Test
+          public void testPowerPositiveBaseZeroExponent() {
+              simpleTest("1", "3 ^ 0");
+          }
+      
+          @Test
+          public void testPowerNegativeBaseZeroExponent() {
+              simpleTest("1", "-3 ^ 0");
+          }
+      
+          @Test
+          public void testPowerLargeBase() {
+              simpleTest("10000000000", "10 ^ 10");
+          }
+      
+          @Test
+          public void testSumPositiveNumbers() {
+              simpleTest("8", "5 + 3");
+          }
+      
+          @Test
+          public void testSumNegativeNumbers() {
+              simpleTest("-8", "-5 + -3");
+          }
+      
+          @Test
+          public void testSumZeroAndPositiveNumber() {
+              simpleTest("5", "5 + 0");
+          }
+      
+          @Test
+          public void testSumZeroAndNegativeNumber() {
+              simpleTest("-5", "-5 + 0");
+          }
+      
+          @Test
+          public void testSubtractPositiveNumbers() {
+              simpleTest("2", "5 - 3");
+          }
+      
+          @Test
+          public void testSubtractNegativeNumbers() {
+              simpleTest("-2", "-5 - -3");
+          }
+      
+          @Test
+          public void testSubtractZeroAndPositiveNumber() {
+              simpleTest("5", "5 - 0");
+          }
+      
+          @Test
+          public void testSubtractZeroAndNegativeNumber() {
+              simpleTest("-5", "-5 - 0");
+          }
+      
+          @Test
+          public void testMultiplyPositiveNumbers() {
+              simpleTest("15", "5 * 3");
+          }
+      
+          @Test
+          public void testMultiplyNegativeNumbers() {
+              simpleTest("15", "-5 * -3");
+          }
+      
+          @Test
+          public void testMultiplyZeroAndNumber() {
+              simpleTest("0", "5 * 0");
+          }
+      
+          @Test
+          public void testMultiplyTwoZeros() {
+              simpleTest("0", "0 * 0");
+          }
+      
+          @Test
+          public void testDividePositiveNumbers() {
+              simpleTest("5", "15 / 3");
+          }
+      
+          @Test
+          public void testDivideNegativeNumbers() {
+              simpleTest("5", "-15 / -3");
+          }
+      
+          @Test
+          public void testDivideZeroByNumber() {
+              simpleTest("0", "0 / 5");
+          }
+      
+          @Test
+          public void testDivideNumberByZero() {
+              simpleTest("Division by 0!", "5 / 0");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+  - name: src/SimpleCalculator.java
+    visible: true
+    text: |-
+      public class SimpleCalculator {
+      
+          // Implement your methods here
+          public static void subtractTwoNumbers...
+      
+      
+          public static void sumTwoNumbers...
+      
+      
+          public static void divideTwoNumbers...
+      
+      
+          public static void multiplyTwoNumbers...
+      
+          // Implemented method
+          public static void power(long n, long p) {
+              long number = n;
+              long power = p;
+              long result = 1;
+              while (power > 0) {
+                  if (power % 2 != 0) {
+                      result *= number;
+                  }
+                  power /= 2;
+                  number *= number;
+              }
+              System.out.println(result);
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 07:08:39 UTC"
+record: -1

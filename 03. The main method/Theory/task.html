@@ -1,0 +1,75 @@
+<h2>The main method</h2>
+<h4>The declaration of the main method</h4>
+<p>Java is primarily an object-oriented language. It means a Java program can be considered as a collection of objects
+    that communicate via calling each other's methods. A typical Java program includes a lot of classes, interfaces,
+    objects, and other concepts from object-oriented programming.</p>
+<p>Even the simplest "procedural-style" program should have at least one class and the main method inside to start the
+    program. The main method is the entry point for any application. It means that the execution of any program begins
+    right here. Ever since Java 7, there has been no other way to start an application than with this method (excluding
+    the case in which you start your application inside a special container for applications but this is not considered
+    in our materials).</p>
+<p>Let's see an example of the simplest application that prints the text <strong>"Hello, Java"</strong> to the standard
+    output:</p>
+<pre><code>public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, Java");
+    }
+}</code></pre>
+<p>Here is a class named <code>Main</code>. The class contains <strong>the main method</strong> for starting the
+    program.</p>
+<p>It is important to mention that a class containing the main method can have any name, but the main method should
+    always have the name <code>main</code>.</p>
+<p>Let's take a closer look at the declaration of the main method:</p>
+<pre><code>public static void main(String[] args)</code></pre>
+<ul>
+    <li>the keyword <code>public</code> indicates that the method can be invoked from everywhere;</li>
+    <li>the keyword <code>static</code> indicates the method can be invoked without creating an instance of the class;
+    </li>
+    <li>the keyword <code>void</code> indicates the method doesn't return any value;</li>
+    <li>the array variable <code>args</code> contains arguments entered at the command line, the array is empty if there
+        are no arguments.
+    </li>
+</ul>
+<p>As you can see, even the simplest Java application contains a lot of concepts. All of them will be studied in the
+    next topics related to methods and object-oriented programming. Now you should just understand how to write and run
+    a simple Java program with <strong>the main method</strong>.</p>
+
+<h4>Invalid declarations of the main method</h4>
+<p>If the main method has an invalid declaration, two cases are possible:</p>
+<ul>
+    <li>your program cannot be compiled</li>
+    <li>your program is successfully compiled but can't be started</li>
+</ul>
+<p><strong>Your program cannot be compiled. </strong>This is the case when the main method declaration breaks the syntax
+    of Java.</p>
+<p>Examples:</p>
+<ul>
+    <li>invalid method declaration: no return value (even <code>void</code>).</li>
+</ul>
+<pre><code>public static main(String[] args)</code></pre>
+<ul>
+    <li>invalid method declaration: a mistake in the keyword (<code>pulic</code> instead of <code>public</code>).</li>
+</ul>
+<pre><code>pulic static void main(String[] args)</code></pre>
+<p><strong>A program can be compiled but cannot be run.</strong> This is the case when the main method has a correct
+    declaration as a regular method but doesn't satisfy the specific requirement of the main method.</p>
+<p>Examples:</p>
+<ul>
+    <li>invalid arguments (should be <code>String[] args</code>)</li>
+</ul>
+<pre><code>public static void main(String args) {
+    System.out.println("Hello, Java");
+}</code></pre>
+<ul>
+    <li>the method declaration has no keyword <code>static</code></li>
+</ul>
+<pre><code>public void main(String[] args) { 
+    System.out.println("Hello, Java");
+} </code></pre>
+<p>In both cases, an error happens at runtime.</p>
+
+<h4>Conclusion</h4>
+<p>So, the main method is the entry point of any Java program. It has a very specific syntax which you need to
+    remember.</p>
+

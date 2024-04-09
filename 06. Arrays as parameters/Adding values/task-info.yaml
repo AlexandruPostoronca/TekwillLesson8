@@ -1,0 +1,95 @@
+type: edu
+custom_name: Adding values
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      import java.util.*;
+      
+      public class Main {
+      
+          // write a method here
+          public static ...
+      
+      
+          // don't change the code below
+          public static void main(String[] args) {
+              Scanner scanner = new Scanner(System.in);
+              long[] array = Arrays.stream(scanner.nextLine().split(" "))
+                      .mapToLong(Long::parseLong)
+                      .toArray();
+              int index = scanner.nextInt();
+              long value = scanner.nextLong();
+              addValueByIndex(array, index, value);
+              Arrays.stream(array).forEach(e -> System.out.print(e + " "));
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void testAddValueToElement_basicCase() {
+              simpleTest("1 1 101 1 1", "1 1 1 1 1\n2 100");
+          }
+      
+          @Test
+          public void testAddValueToElement_addZero() {
+              simpleTest("1 1 1 1 1", "1 1 1 1 1\n3 0");
+          }
+      
+          @Test
+          public void testAddValueToElement_addNegativeValue() {
+              simpleTest("1 1 -1 1 1", "1 1 0 1 1\n2 -1");
+          }
+      
+          @Test
+          public void testAddValueToElement_addMaxLongValue() {
+              simpleTest("9223372036854775807 1 9223372036854775806 1 1", "9223372036854775807 1 0 1 1\n2 9223372036854775806");
+          }
+      
+          @Test
+          public void testAddValueToElement_addValueToLastElement() {
+              simpleTest("1 1 1 1 101", "1 1 1 1 100\n4 1");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 08 Apr 2024 15:31:07 UTC"
+record: -1

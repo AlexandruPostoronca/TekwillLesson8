@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: non-primitive variables
+    is_correct: false
+  - text: hammers and hand drills
+    is_correct: false
+  - text: integers
+    is_correct: false
+  - text: methods
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:21:15 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: The main tools of functional decomposition
+local_check: true

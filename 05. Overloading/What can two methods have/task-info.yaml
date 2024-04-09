@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "the same name, the same number and type of arguments."
+    is_correct: false
+  - text: "the same name, the same return type but different type of arguments."
+    is_correct: true
+  - text: "the same name, the same return type, the same number and type of arguments."
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 09:51:54 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: What can two methods have?
+local_check: true

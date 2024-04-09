@@ -1,0 +1,96 @@
+type: edu
+custom_name: Get first and last elements
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      import java.util.*;
+      
+      public class Main {
+      
+          // write a method here
+      
+          /* Do not change the code below */
+          public static void main(String[] args) {
+              Scanner scanner = new Scanner(System.in);
+              int[] array = Arrays.stream(scanner.nextLine().split(" "))
+                      .mapToInt(Integer::parseInt)
+                      .toArray();
+              int[] result = getFirstAndLast(array);
+              Arrays.stream(result).forEach(e -> System.out.print(e + " "));
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void testGetFirstAndLast_basic() {
+              simpleTest("1 5", "1 2 3 4 5");
+          }
+      
+          @Test
+          public void testGetFirstAndLast_oneElement() {
+              simpleTest("1 1", "1");
+          }
+      
+          @Test
+          public void testGetFirstAndLast_negativeElements() {
+              simpleTest("-3 5", "-3 -2 -1 0 5");
+          }
+      
+          @Test
+          public void testGetFirstAndLast_duplicateElements() {
+              simpleTest("1 1", "1 2 3 4 1");
+          }
+      
+          @Test
+          public void testGetFirstAndLast_oddLength() {
+              simpleTest("1 7", "1 2 3 4 5 6 7");
+          }
+      
+          @Test
+          public void testGetFirstAndLast_evenLength() {
+              simpleTest("1 8", "1 2 3 4 5 6 7 8");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 08 Apr 2024 18:09:08 UTC"
+record: -1

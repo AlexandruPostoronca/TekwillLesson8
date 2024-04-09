@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: method();
+    is_correct: false
+  - text: method(1);
+    is_correct: false
+  - text: "method(new double[] { 1.02, 1.03, 1.04 });"
+    is_correct: true
+  - text: "method(new double[] {});"
+    is_correct: true
+  - text: "method(1, 2, 3);"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:51:03 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+custom_name: How to invoke the method
+local_check: true

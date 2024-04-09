@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-04-08T15:31:07" hostname="DESKTOP-A97GDF4" time="0.016">
+  <properties/>
+  <testcase name="testAddValueToElement_addZero" classname="MainTest" time="0.012"/>
+  <testcase name="testAddValueToElement_addValueToLastElement" classname="MainTest" time="0.001"/>
+  <testcase name="testAddValueToElement_addNegativeValue" classname="MainTest" time="0.001"/>
+  <testcase name="testAddValueToElement_basicCase" classname="MainTest" time="0.001"/>
+  <testcase name="testAddValueToElement_addMaxLongValue" classname="MainTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

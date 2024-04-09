@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: a
+    is_correct: false
+  - text: b
+    is_correct: true
+  - text: c
+    is_correct: true
+  - text: d
+    is_correct: false
+  - text: e
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:17:09 UTC"
+record: -1
+selected_options:
+  - 1
+  - 2
+  - 4
+custom_name: Different declarations
+local_check: true

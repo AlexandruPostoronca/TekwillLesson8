@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: several methods have the same name and the same bodies
+    is_correct: false
+  - text: several methods are public
+    is_correct: false
+  - text: several methods have the same name and parameters but different return types
+    is_correct: false
+  - text: several methods have the same return types
+    is_correct: false
+  - text: several methods have the same name but different number or type of parameters
+    is_correct: true
+  - text: several methods have different names but the same number and type of parameter
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 09:57:18 UTC"
+record: -1
+selected_options:
+  - 4
+custom_name: When overloading happens
+local_check: true

@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Decomposed program works faster.
+    is_correct: false
+  - text: The code looks more readable.
+    is_correct: true
+  - text: Separate parts of code are easier to test.
+    is_correct: true
+  - text: The code is easier to reuse.
+    is_correct: true
+  - text: Decomposed program uses less memory.
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:24:37 UTC"
+record: -1
+selected_options:
+  - 1
+  - 2
+  - 3
+custom_name: Why decompose a program
+local_check: true

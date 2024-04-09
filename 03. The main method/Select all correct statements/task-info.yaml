@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: The method has an argument.
+    is_correct: true
+  - text: The method must be static.
+    is_correct: true
+  - text: The method always returns nothing (void).
+    is_correct: true
+  - text: The method must be private.
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:07:34 UTC"
+record: -1
+selected_options:
+  - 0
+  - 1
+  - 2
+custom_name: Select all correct statements
+local_check: true

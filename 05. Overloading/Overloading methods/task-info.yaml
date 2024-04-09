@@ -1,0 +1,112 @@
+type: edu
+custom_name: Overloading methods
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      import java.util.Scanner;
+      
+      public class Main {
+      
+          public static long getMaxMinusCurrent(long val) {
+              return Long.MAX_VALUE - val;
+          }
+      
+          // write a method here
+          // public static ...
+      
+          // Do not change the code below
+          public static void main(String[] args) {
+              final Scanner scanner = new Scanner(System.in);
+              final String type = scanner.nextLine();
+              switch (type) {
+                  case "long" -> {
+                      final long longVal = Long.parseLong(scanner.nextLine());
+                      final long longResult = getMaxMinusCurrent(longVal);
+                      System.out.println(longResult);
+                  }
+                  case "int" -> {
+                      final int intVal = Integer.parseInt(scanner.nextLine());
+                      final int intResult = getMaxMinusCurrent(intVal);
+                      System.out.println(intResult);
+                  }
+                  default -> System.out.println("Unknown type found");
+              }
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+      
+          @Test
+          public void testGetMaxMinusCurrent_long() {
+              simpleTest("9223372036854775797", "long", "10");
+          }
+      
+          @Test
+          public void testGetMaxMinusCurrent_int() {
+              simpleTest("2147483639", "int", "8");
+          }
+      
+          @Test
+          public void testGetMaxMinusCurrent_long_zero() {
+              simpleTest("9223372036854775807", "long", "0");
+          }
+      
+          @Test
+          public void testGetMaxMinusCurrent_int_zero() {
+              simpleTest("2147483647", "int", "0");
+          }
+      
+          @Test
+          public void testGetMaxMinusCurrent_long_maxValue() {
+              simpleTest("0", "long", "9223372036854775807");
+          }
+      
+          @Test
+          public void testGetMaxMinusCurrent_int_maxValue() {
+              simpleTest("0", "int", "2147483647");
+          }
+      
+          private void simpleTest(String expectedOutput, String... inputLines) {
+              String input = String.join(System.lineSeparator(), inputLines);
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:22:26 UTC"
+record: -1

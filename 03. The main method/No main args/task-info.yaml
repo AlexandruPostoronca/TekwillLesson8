@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Program will not run
+    is_correct: true
+  - text: Program exit after starting
+    is_correct: false
+  - text: Undefined behaviour
+    is_correct: false
+  - text: "No errors, the program will compile and run successfully"
+    is_correct: false
+  - text: Compilation error
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:14:29 UTC"
+record: -1
+selected_options:
+  - 0
+custom_name: No main args
+local_check: true

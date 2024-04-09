@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "static public void findAirports(String city) { /*...*/ }"
+    is_correct: false
+  - text: "public void static findAirports(String city) { /*...*/ }"
+    is_correct: false
+  - text: "public void findAirports(String city) { /*...*/ }"
+    is_correct: true
+  - text: "public static void findAirports(String city) { /*...*/ }"
+    is_correct: true
+  - text: "void public findAirports(String city) { /*...*/ }"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 26 Mar 2024 21:08:38 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+custom_name: Syntactically correct declarations
+local_check: true

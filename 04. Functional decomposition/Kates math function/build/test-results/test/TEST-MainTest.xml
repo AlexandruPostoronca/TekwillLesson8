@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2024-03-27T13:06:48" hostname="DESKTOP-A97GDF4" time="0.019">
+  <properties/>
+  <testcase name="testFWithInputGreaterThanOne" classname="MainTest" time="0.002"/>
+  <testcase name="testLargePositiveInput" classname="MainTest" time="0.007"/>
+  <testcase name="testPositiveIntegerInput" classname="MainTest" time="0.002"/>
+  <testcase name="testF1" classname="MainTest" time="0.0"/>
+  <testcase name="testF2" classname="MainTest" time="0.0"/>
+  <testcase name="testF3" classname="MainTest" time="0.0"/>
+  <testcase name="testMainMethod" classname="MainTest" time="0.002"/>
+  <testcase name="testFWithInputBetweenZeroAndOne" classname="MainTest" time="0.0"/>
+  <testcase name="testZeroInput" classname="MainTest" time="0.002"/>
+  <testcase name="testNegativeInput" classname="MainTest" time="0.001"/>
+  <testcase name="testPositiveFractionalInput" classname="MainTest" time="0.002"/>
+  <testcase name="testFWithNegativeInput" classname="MainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

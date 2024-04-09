@@ -1,0 +1,105 @@
+<h2>Kate's math function</h2>
+<p>Here is a math function that Kate wants to use in her program:</p>
+<p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <semantics>
+            <mrow>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mrow>
+                    <mo fence="true">{</mo>
+                    <mtable rowspacing="0.16em" columnalign="left left" columnspacing="1em">
+                        <mtr>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <mtext>if&nbsp;&nbsp;&nbsp;</mtext>
+                                        <mi>x</mi>
+                                        <mo>≤</mo>
+                                        <mn>0</mn>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <mn>1</mn>
+                                        <mi mathvariant="normal">/</mi>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <mtext>if&nbsp;&nbsp;&nbsp;</mtext>
+                                        <mn>0</mn>
+                                        <mo>&lt;</mo>
+                                        <mi>x</mi>
+                                        <mo>&lt;</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>−</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                            <mtd>
+                                <mstyle scriptlevel="0" displaystyle="false">
+                                    <mrow>
+                                        <mtext>if&nbsp;&nbsp;&nbsp;</mtext>
+                                        <mi>x</mi>
+                                        <mo>≥</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mstyle>
+                            </mtd>
+                        </mtr>
+                    </mtable>
+                </mrow>
+            </mrow>
+        </semantics>
+    </math>
+</p>
+<p>The template for this function is defined below. Let's decompose it!</p>
+<p>Your task is to create three additional methods <code>f1</code>, <code>f2</code>, and <code>f3</code> for each case
+    and complete the method<code>f</code>. Each method should accept <code>x</code> as an argument with
+    <code>double</code> type.</p>
+<div>
+    <p><strong> Sample Input 1: </strong><code>0.5</code></p>
+    <p><strong> Sample Output 1: </strong><code>4.0</code></p>
+</div>
+<div><p><strong> Sample Input 2: </strong><code>-4</code></p>
+    <p><strong> Sample Output 2: </strong><code>17.0</code></p>
+</div>

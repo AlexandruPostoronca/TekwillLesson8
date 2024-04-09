@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-03-27T11:04:06" hostname="DESKTOP-A97GDF4" time="0.016">
+  <properties/>
+  <testcase name="testMaxAtFirstPosition" classname="MainTest" time="0.005"/>
+  <testcase name="testMaxAtFirstAndSecondParam" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtFirstAndThirdParam" classname="MainTest" time="0.0"/>
+  <testcase name="testAllParamsNegative" classname="MainTest" time="0.0"/>
+  <testcase name="testTwoParamsEqualAndGreater" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtSecondAndThirdParam" classname="MainTest" time="0.001"/>
+  <testcase name="testAllParamsEqual" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtThirdPosition" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtSecondParam" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtThirdParam" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtSecondPosition" classname="MainTest" time="0.001"/>
+  <testcase name="testEqualParams" classname="MainTest" time="0.001"/>
+  <testcase name="testMaxAtFirstParam" classname="MainTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

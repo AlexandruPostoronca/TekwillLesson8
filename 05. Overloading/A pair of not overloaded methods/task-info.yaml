@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "void method(int i) { System.out.println(i); }"
+    is_correct: true
+  - text: "String method(int i, String s) { return s + i; }"
+    is_correct: false
+  - text: "int method(int i) { return i; }"
+    is_correct: true
+  - text: "float method(float f) { return f; }"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:10:39 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+custom_name: A pair of not overloaded methods
+local_check: true

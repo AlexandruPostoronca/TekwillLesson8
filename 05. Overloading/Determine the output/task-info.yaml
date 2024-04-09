@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: int int method
+    is_correct: false
+  - text: int float method
+    is_correct: false
+  - text: double double method
+    is_correct: true
+  - text: float int method
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:00:23 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Determine the output
+local_check: true

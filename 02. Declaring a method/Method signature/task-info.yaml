@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: int abs
+    is_correct: false
+  - text: int abs(int)
+    is_correct: false
+  - text: abs(int)
+    is_correct: true
+  - text: abs
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 26 Mar 2024 20:32:50 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Method signature
+local_check: true

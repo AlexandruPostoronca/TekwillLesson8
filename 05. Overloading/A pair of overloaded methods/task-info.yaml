@@ -1,0 +1,37 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "public static void method2() { /* do something */ }"
+    is_correct: false
+  - text: "public static void method3(int a, double b, long c) { /* do something */\
+    \ }"
+    is_correct: false
+  - text: "public static void method1() { /* do something */ }"
+    is_correct: true
+  - text: "public static void method1(int a, double b) { /* do something */ }"
+    is_correct: true
+  - text: "public static int method2() { /* do something */ }"
+    is_correct: false
+  - text: "public static void method333() { /* do something */ }"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:13:21 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+custom_name: A pair of overloaded methods
+local_check: true

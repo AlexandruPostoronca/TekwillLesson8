@@ -1,0 +1,23 @@
+title: 08. Methods
+language: English
+summary: |-
+  This is an introductory Java Methods course.
+    - 01. Calling a method
+    - 02. Declaring a method
+    - 03. The main method
+    - 04. Functional decomposition
+    - 05. Overloading
+    - 06. Arrays as parameters
+programming_language: Java
+content:
+  - 01. Calling a method
+  - 02. Declaring a method
+  - 03. The main method
+  - 04. Functional decomposition
+  - 05. Overloading
+  - 06. Arrays as parameters
+mode: Study
+environment_settings:
+  jvm_language_level: JDK_17
+vendor:
+  name: Alexandru Umaneț

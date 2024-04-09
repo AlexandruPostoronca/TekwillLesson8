@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: method();
+    is_correct: false
+  - text: "method(new int[] { 1, 2, 3 });"
+    is_correct: true
+  - text: "method(new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 });"
+    is_correct: true
+  - text: "method(new int[] { 1, 2, 3 }, 4, 5);"
+    is_correct: true
+  - text: "method(1, 2, 3);"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 10:52:03 UTC"
+record: -1
+selected_options:
+  - 1
+  - 2
+  - 3
+custom_name: Varargs method invocation
+local_check: true

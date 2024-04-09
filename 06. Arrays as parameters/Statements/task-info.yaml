@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "If a method has several parameters, a vararg must be the first parameter."
+    is_correct: false
+  - text: "When you pass an array to a method, a copy of each element of the array is\
+    \ created."
+    is_correct: false
+  - text: It's possible to pass an array to a vararg parameter.
+    is_correct: true
+  - text: It's impossible to pass a single-element array to a method.
+    is_correct: false
+  - text: "A method can have a parameter of the boolean[] type (the array of booleans)."
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 11:03:07 UTC"
+record: -1
+selected_options:
+  - 2
+  - 4
+custom_name: Statements
+local_check: true

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-03-26T21:23:04" hostname="DESKTOP-A97GDF4" time="1.513">
+  <properties/>
+  <testcase name="testSumInRangeWithMaxIntValues" classname="MainTest" time="0.525"/>
+  <testcase name="testSumInRangeWithMinIntValues" classname="MainTest" time="0.511"/>
+  <testcase name="testSumInRangeWithValidInput" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithLargeNumbers" classname="MainTest" time="0.47"/>
+  <testcase name="testSumInRangeWithSameNegativeValues" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithNegativeToPositiveRange" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithSwappedInput" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithNegativeRange" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithSamePositiveValues" classname="MainTest" time="0.001"/>
+  <testcase name="testSumInRangeWithEmptyRange" classname="MainTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

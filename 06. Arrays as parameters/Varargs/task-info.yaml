@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "public static void method(long... vararg) { /* do something */ }"
+    is_correct: true
+  - text: "public static void method(long.. vararg) { /* do something */ }"
+    is_correct: false
+  - text: "public static void method(long vararg...) { /* do something */ }"
+    is_correct: false
+  - text: "public static void method(int[] a, long... vararg) { /* do something */ }"
+    is_correct: true
+  - text: "public static void method(double... vararg, int a) { /* do something */ }"
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Mar 2024 11:28:56 UTC"
+record: -1
+selected_options:
+  - 0
+  - 3
+custom_name: Varargs
+local_check: true

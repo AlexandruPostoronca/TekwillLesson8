@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: The application will print "No! I'm still the boss!"
+    is_correct: false
+  - text: The code will not compile
+    is_correct: false
+  - text: The code will compile but throw an error during runtime
+    is_correct: true
+  - text: The application will print "I'm the boss"
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 27 Mar 2024 11:13:19 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Who is the main?
+local_check: true

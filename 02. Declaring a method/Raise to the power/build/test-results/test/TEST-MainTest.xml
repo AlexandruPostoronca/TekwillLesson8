@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-03-27T10:01:34" hostname="DESKTOP-A97GDF4" time="0.013">
+  <properties/>
+  <testcase name="testPowerWithBaseEqualToOne" classname="MainTest" time="0.004"/>
+  <testcase name="testPowerWithNegativeBaseAndOddExponent" classname="MainTest" time="0.0"/>
+  <testcase name="testPowerWithZeroExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerWithPositiveExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerWithNegativeBaseAndEvenExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerWithZeroExponentAndZeroBase" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerWithZeroBaseAndNonZeroExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testFromProblem1" classname="MainTest" time="0.001"/>
+  <testcase name="testFromProblem2" classname="MainTest" time="0.0"/>
+  <testcase name="testFromProblem3" classname="MainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

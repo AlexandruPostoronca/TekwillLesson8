@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-04-08T18:09:08" hostname="DESKTOP-A97GDF4" time="0.01">
+  <properties/>
+  <testcase name="testGetFirstAndLast_basic" classname="MainTest" time="0.009"/>
+  <testcase name="testGetFirstAndLast_evenLength" classname="MainTest" time="0.0"/>
+  <testcase name="testGetFirstAndLast_negativeElements" classname="MainTest" time="0.0"/>
+  <testcase name="testGetFirstAndLast_duplicateElements" classname="MainTest" time="0.0"/>
+  <testcase name="testGetFirstAndLast_oddLength" classname="MainTest" time="0.0"/>
+  <testcase name="testGetFirstAndLast_oneElement" classname="MainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

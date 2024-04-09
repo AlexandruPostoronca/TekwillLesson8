@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2024-03-28T07:08:39" hostname="DESKTOP-A97GDF4" time="0.028">
+  <properties/>
+  <testcase name="testPowerNegativeBaseZeroExponent" classname="MainTest" time="0.007"/>
+  <testcase name="testMultiplyPositiveNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerNegativeBasePositiveExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testMultiplyNegativeNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerLargeBase" classname="MainTest" time="0.001"/>
+  <testcase name="testSumZeroAndNegativeNumber" classname="MainTest" time="0.001"/>
+  <testcase name="testDivideNumberByZero" classname="MainTest" time="0.001"/>
+  <testcase name="testSumZeroAndPositiveNumber" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerPositiveBasePositiveExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testSumPositiveNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testSubtractZeroAndNegativeNumber" classname="MainTest" time="0.001"/>
+  <testcase name="testSumNegativeNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testMultiplyTwoZeros" classname="MainTest" time="0.0"/>
+  <testcase name="testDividePositiveNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testPowerPositiveBaseZeroExponent" classname="MainTest" time="0.001"/>
+  <testcase name="testMultiplyZeroAndNumber" classname="MainTest" time="0.001"/>
+  <testcase name="testSubtractZeroAndPositiveNumber" classname="MainTest" time="0.0"/>
+  <testcase name="testDivideNegativeNumbers" classname="MainTest" time="0.0"/>
+  <testcase name="testSubtractPositiveNumbers" classname="MainTest" time="0.001"/>
+  <testcase name="testSubtractNegativeNumbers" classname="MainTest" time="0.0"/>
+  <testcase name="testDivideZeroByNumber" classname="MainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

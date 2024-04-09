@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: This method calculates the absolute value of a double value
+    is_correct: true
+  - text: It is a user-defined method
+    is_correct: false
+  - text: It is a built-in method
+    is_correct: true
+  - text: It belongs to the Math library
+    is_correct: true
+  - text: This method's name is Math
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 26 Mar 2024 20:17:05 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+  - 3
+custom_name: Abs method
+local_check: true

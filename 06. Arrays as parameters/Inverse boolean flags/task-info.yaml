@@ -1,0 +1,103 @@
+type: edu
+custom_name: Inverse boolean flags
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      import java.util.*;
+      import java.util.stream.Collectors;
+      
+      public class Main {
+      
+          public static void inverseFlags(/* write a parameter here */) {
+              // write your code here
+          }
+      
+          /* Do not change the code below */
+          public static void main(String[] args) {
+              final Scanner scanner = new Scanner(System.in);
+              final List<Boolean> booleans = Arrays
+                      .stream(scanner.nextLine().split("\\s+"))
+                      .map(Boolean::parseBoolean)
+                      .collect(Collectors.toList());
+              final boolean[] flags = new boolean[booleans.size()];
+              for (int i = 0; i < flags.length; i++) {
+                  flags[i] = booleans.get(i);
+              }
+              inverseFlags(flags);
+              final String representation = Arrays.toString(flags)
+                      .replace("[", "")
+                      .replace("]", "")
+                      .replace(",", "");
+              System.out.println(representation);
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void testInvertArraySingleElementTrue() {
+              simpleTest("false", "true");
+          }
+      
+          @Test
+          public void testInvertArraySingleElementFalse() {
+              simpleTest("true", "false");
+          }
+      
+          @Test
+          public void testInvertArrayAllTrue() {
+              simpleTest("false false false false", "true true true true");
+          }
+      
+          @Test
+          public void testInvertArrayAllFalse() {
+              simpleTest("true true true true", "false false false false");
+          }
+      
+          @Test
+          public void testInvertArrayMixed() {
+              simpleTest("false true false true", "true false true false");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 08 Apr 2024 20:09:41 UTC"
+record: -1
